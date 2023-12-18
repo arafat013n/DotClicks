@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DotClicks</title>
+
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Animate.css CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css">
+
+    <!-- Google Fonts CDN -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+    
+    <style>
+        /* Custom styles can be added here */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Custom Navbar Styles */
+        header {
+            background-color: #3498db; /* Change the background color */
+            color: #fff; /* Change the text color */
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+
+        nav a {
+            color: #fff; /* Change the text color of links */
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+        }
+
+        /* Custom Dropdown Styles */
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #3498db; /* Change the background color of the dropdown */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #fff !important; /* Change the text color of dropdown items */
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        /* Animation Styles */
+        .animated-heading {
+            animation: fadeInDown 1s ease-in-out;
+        }
+
+        .animated-section {
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        /* Card Styles */
+        .card {
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        /* Button Style */
+        .earning-button {
+            background-color: #27ae60; /* Change the background color of the button */
+            color: #fff; /* Change the text color of the button */
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .earning-button:hover {
+            background-color: #219653; /* Change the background color on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Custom Navbar -->
+    <header>
+        <h1 class="animated-heading">DotClicks</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Services</a>
+                <div class="dropdown-content">
+                    <a href="#">Service 1</a>
+                    <a href="#">Service 2</a>
+                    <a href="#">Service 3</a>
+                </div>
+            </div>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Bootstrap-styled Section -->
+    <div class="container mt-5 animated-section">
+        <div class="row">
+            <div class="col-lg-6">
+                <h1 class="display-4">Welcome to DotClicks</h1>
+                <p class="lead">Your go-to destination for...</p>
+                <!-- Add more content as needed -->
+            </div>
+            <div class="col-lg-6">
+                <!-- Add an image or other media here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- How It Works Section with Beautiful Cards -->
+    <section class="container mt-5 animated-section">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="display-4 mb-4">How It Works</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 text-center">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title mb-3">Step 1</h3>
+                        <p class="card-text">Sign up for DotClicks and create your account.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title mb-3">Step 2</h3>
+                        <p class="card-text">Explore our services and choose the ones that fit your needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 text-center">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h3 class="card-title mb-3">Step 3</h3>
+                        <p class="card-text">Start earning by leveraging the power of DotClicks.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Start Earning Button -->
+        <div class="row mt-4">
+            <div class="col-lg-12 text-center">
+                <button class="earning-button">Start Earning</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap-styled Footer -->
+    <footer class="bg-light py-4 mt-5">
+        <div class="container text-center">
+            <p>&copy; 2023 DotClicks. All rights reserved.</p>
+            <!-- Add more footer content as needed -->
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS (optional, depending on your needs) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Add more scripts as needed -->
+</body>
+</html>
